@@ -1,0 +1,147 @@
+/*-------- Global --------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: circular std, sans-serif;
+    font-weight: 100;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(59, 58, 58);
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(124, 121, 122);
+}
+
+
+/*-------- Nav --------*/
+.nav {
+    display: flex;
+    align-items: center;
+    height: 90px;
+
+}
+
+.contactMe, .navIcons {
+    flex: 1;
+}
+
+.navIcons {
+    text-align: right;
+    margin-right: 200px;
+}
+
+.navIcons a, .contactMe a, .contactMe img {
+    vertical-align: middle;
+}
+
+
+.navIcons a {
+    margin-left: 50px;
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+    
+}
+
+.navIcons a:hover {
+    color: rgb(218, 170, 170);
+    text-decoration: none;
+}
+
+
+/* reize images */
+.proj {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .proj img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+  }
+
+  .proj1 {
+    margin-top: 5em;
+  }
+
+/*-------- Footer --------*/
+
+.footer {
+    height: 100px;
+    margin-top: 0em;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 320px;
+    padding-bottom: 3em;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+
+.footer a {
+    color: rgb(168, 165, 165);
+    text-decoration: none;
+}
+
+.footer p {
+    color: rgb(168, 165, 165);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecebeb;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a:hover{
+    background-color: rgb(216, 160, 160);
+    color: #fff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}

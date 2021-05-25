@@ -1,0 +1,417 @@
+/*-------- All --------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: circular std, sans-serif;
+    font-weight: 100;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-image: url(images/background.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #17191A;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(207, 151, 151);
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(146, 102, 102);
+}
+
+p {
+
+    color: rgb(80, 80, 80);
+    opacity: 0.8;
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/*-------- Nav --------*/
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+}
+
+
+.contactMe, .navIcons {
+    flex: 1;
+}
+
+.navIcons {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 9.5px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.navIcons a, .contactMe a, .contactMe img {
+    vertical-align: middle;
+}
+
+.navIcons a {
+    margin-left: 50px;
+    color: rgb(83, 82, 82);
+    text-decoration: none;
+    
+}
+
+.navIcons a:hover {
+    color: rgb(216, 160, 160);
+    text-decoration: none;
+}
+
+
+/* Landing */
+.landing {
+    position: relative;
+    margin-top: 90px;
+    height: 30vh;
+   
+}
+
+.landingWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; 
+}
+
+ul{ 
+    list-style: none;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.landingL {
+    margin-top: 0em;  
+}
+
+.landingR {
+    margin-top: 0em;
+    margin-left: 150px;
+    width: 700px;
+    margin-right: 0px;
+}
+.landingRR {
+    margin-top: 0px;
+    margin-left: -100px;
+    margin-right: 100px;
+    width: 600px;
+    text-align: center;
+   
+}
+
+.landingRR img {
+    -webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+
+}
+
+.type {
+    color: rgb(206, 143, 143);
+    float: right;
+}
+
+
+.hi-slide {
+    position: relative;
+    width: 754px;
+    height: 300px;
+    margin: 350px auto 0;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color:  rgb(216, 160, 160);
+    color: black;
+    transition: all 0.7s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+    opacity: 1;
+    background-color:rgb(243, 214, 214);
+}
+
+.hi-slide .hi-prev{
+    left: -70px;
+}
+
+.hi-slide .hi-prev::before{
+    content: '<';
+    color: white;
+}
+
+.hi-slide .hi-next{
+    right: -70px;
+}
+
+.hi-slide .hi-next::before{
+    content: '>';
+    color: white;
+}
+
+.hi-slide > ul {
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.hi-slide > ul > li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.hi-slide > ul > li > img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.gmail a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(207, 151, 151);
+}
+
+.gmail a:hover {
+    color: rgb(121, 121, 121);
+}
+
+/*-------- Skills --------*/
+.alekhya {
+   width: 400px;
+   margin-left: -20px;
+   margin: 10px;
+}
+
+/* .skills {
+    text-align: left;
+    font-family: circular std, sans-serif;
+    width: 300px;
+    margin-right: 300px;
+    margin: auto;
+    list-style: none;
+    color: rgb(82, 80, 80);
+
+}
+
+.skills li{
+    margin: 20px 0;
+    
+}
+
+.bar {
+    background:#faf9faab;
+    display: block;
+    height: 2px; 
+    color: rgb(231, 139, 139);
+    font-family: sans-serif;
+    border-radius: 3px;
+    /* border: 1px solid rgb(248, 248, 248); */
+    /* overflow: hidden;
+    box-shadow: 0 0 10px #3b3737e5;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: rgb(253, 157, 157);
+    border: 1px solid rgb(250, 150, 150);
+}
+
+.html {
+    width: 84%;
+    animation: html 2s;
+}
+.css {
+    width: 87%;
+    animation: css 2s;
+}
+.photoshop {
+    width: 75%;
+    animation: photoshop 2s;
+}
+.illustrator {
+    width: 93%;
+    animation: illustrator 2s;
+}
+.xd {
+    width: 72%;
+    animation: xd 2s;
+}
+.python {
+    width: 56%;
+    animation: python 2s;
+}
+.javascript {
+    width: 15%;
+    animation: javascript 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 84%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 87%;
+    }
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes illustrator {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 93%;
+    }
+}
+@keyframes xd {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 56%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+} */ 
+
+
+
+/*-------- Footer --------*/
+
+
+.footer {
+    height: 100px;
+    margin-top: 0em;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 320px;
+    padding-bottom: 3em;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+
+.footer a {
+    color: rgb(228, 205, 205);
+    text-decoration: none;
+}
+
+.footer p {
+    color: rgb(168, 165, 165);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 20px 10px;
+    border-radius: 50%;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a:hover{
+    background-color: rgb(216, 160, 160);
+    color: #fff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
+}
